@@ -1,0 +1,4 @@
+repository "Mind Remnants 2025-10-16_10-47-35/Mind Remnants@10170746571480@cloud"
+  path "/"
+    br "/main"
+    co "/main"
