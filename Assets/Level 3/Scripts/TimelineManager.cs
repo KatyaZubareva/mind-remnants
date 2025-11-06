@@ -39,7 +39,7 @@ public class TimelineManager : MonoBehaviour
         slots[slotIndex] = noteObj;
 
         Rigidbody rb = noteObj.GetComponent<Rigidbody>();
-        if (rb) { rb.isKinematic = true; rb.velocity = Vector3.zero; }
+        if (rb) { rb.isKinematic = true; rb.linearVelocity = Vector3.zero; }
 
         noteObj.transform.position = snapPoint.position;
         noteObj.transform.rotation = snapPoint.rotation;
