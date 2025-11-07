@@ -1,16 +1,16 @@
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
 
-[RequireComponent(typeof(XRGrabInteractable))]
+
+[RequireComponent(typeof(UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable))]
 public class GrabLock : MonoBehaviour
 {
-    private XRGrabInteractable grab;
+    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grab;
     private bool locked = false;
     private Rigidbody rb;
 
     void Awake()
     {
-        grab = GetComponent<XRGrabInteractable>();
+        grab = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
         rb = GetComponent<Rigidbody>();
     }
 
